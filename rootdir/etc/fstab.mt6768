@@ -11,7 +11,7 @@ system_ext     /system_ext           erofs   ro      wait,slotselect,avb=vbmeta_
 system_ext     /system_ext           ext4    ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,readahead_size_kb=128
 
 # Metadata and userdata
-/dev/block/by-name/md_udc   /metadata       ext4    noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount,readahead_size_kb=128
+/dev/block/by-name/md_udc   /metadata       ext4    noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount,metadata_csum,readahead_size_kb=128
 /dev/block/by-name/userdata /data           f2fs    noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,inlinecrypt,fsync_mode=nobarrier wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption,readahead_size_kb=128
 
 # Protection partitions
