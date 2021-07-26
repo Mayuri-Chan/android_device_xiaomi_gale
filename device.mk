@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/xiaomi/gale
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -126,6 +128,9 @@ PRODUCT_PACKAGES += \
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-Gale
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
