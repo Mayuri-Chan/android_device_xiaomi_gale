@@ -87,7 +87,10 @@ on enable-low-power
     write /sys/kernel/ged/hal/dvfs_margin_value 110
 
     # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
+    setprop vendor.powerhal.init 11
+
+    # Adjust watermark level
+    write /proc/sys/vm/watermark_scale_factor 200
 
 on property:sys.boot_completed=1
     trigger enable-low-power
