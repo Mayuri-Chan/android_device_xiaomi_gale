@@ -897,7 +897,6 @@ vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
-vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/mi_thermald
 vendor/bin/thermal
 vendor/bin/thermal_manager
@@ -911,7 +910,6 @@ vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/thermalbreakboostconfig.xml
 vendor/etc/fstb.cfg
-vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal.rc
 vendor/etc/init/init.thermal_manager.rc
 vendor/etc/init/init.thermalloadalgod.rc
@@ -931,9 +929,7 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
-vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib/libthermalalgo.so
-vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
 vendor/lib64/libmtcloader.so
 
