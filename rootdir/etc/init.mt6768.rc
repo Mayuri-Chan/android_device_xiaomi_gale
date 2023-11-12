@@ -141,13 +141,6 @@ on post-fs
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
 
-service charger /system/bin/charger
-    class charger
-    critical
-    #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
-
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
     setprop init.userspace_reboot.userdata_remount.timeoutmillis 10000
