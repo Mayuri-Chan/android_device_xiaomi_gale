@@ -3,8 +3,10 @@ gz.img;AB
 lk.img;AB
 logo.bin:logo.img;AB
 md1img.img;AB
-preloader_gale.bin:preloader_raw.img;AB
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB
 tee.img;AB
+
+# Firmware - from gale-userdebug 13 TP1A.220624.014 FACTORY-GALE-23.12.1 test-keys
+preloader_gale.bin:preloader_raw.img;AB|5384cf60e8a400518d6cb6f0b165bac869c2e78c
