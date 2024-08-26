@@ -50,18 +50,17 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.audio@7.0-impl:32 \
+    android.hardware.audio.effect@7.0-impl:32 \
+    android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    audio.usb.default \
-    audio_policy.stub
+    audio.bluetooth.default:32 \
+    audio.usb.default:32 \
+    audio_policy.stub:32
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -73,9 +72,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor \
-    libbluetooth_audio_session
+    android.hardware.bluetooth.audio-impl:32 \
+    android.hardware.bluetooth@1.1.vendor:32 \
+    libbluetooth_audio_session:32
 
 # Cgroup
 PRODUCT_COPY_FILES += \
