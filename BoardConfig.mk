@@ -8,6 +8,9 @@ DEVICE_PATH := device/xiaomi/gale
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
