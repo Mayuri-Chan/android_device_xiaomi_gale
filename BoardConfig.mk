@@ -11,6 +11,9 @@ BUILD_BROKEN_DUP_RULES := true
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
