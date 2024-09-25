@@ -299,32 +299,44 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "1275000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "1443000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CCIFreqMode",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterDownRateLimitUs",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "500"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterDownRateLimitUs",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "500"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterUpRateLimitUs",
+      "Duration": 1000,
+      "Value": "500"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterUpRateLimitUs",
+      "Duration": 1000,
+      "Value": "2000"
     },
     {
       "PowerHint": "INTERACTION",
