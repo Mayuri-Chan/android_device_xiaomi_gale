@@ -259,4 +259,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.thermal_src=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.CCodec=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.C2Store=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.MDP=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.MDP=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.libperfmgr=S \
+    persist.log.tag.powerhal-libperfmgr=S
