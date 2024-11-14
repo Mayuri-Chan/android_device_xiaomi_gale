@@ -928,7 +928,6 @@ vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
-vendor/etc/thermald-devices.conf
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/thermal_hal.so
 vendor/lib64/libmtcloader.so
