@@ -16,7 +16,9 @@
 /vendor/bin/mi_thermald                                                                                 u:object_r:mi_thermald_exec:s0
 
 # NFC
-/dev/nq-nci u:object_r:nfc_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service-tms                                      u:object_r:hal_nfc_default_exec:s0
+/dev/nq-nci                                                                                            u:object_r:nfc_device:s0
+/dev/tms_nfc                                                                                           u:object_r:nfc_device:s0
 
 # Xiaomi touch
 /dev/xiaomi-touch                                                                                       u:object_r:touchfeature_device:s0
