@@ -631,7 +631,6 @@ vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/firmware/omnivision_hdl_firmware.img
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.mt6768.so
@@ -757,42 +756,10 @@ vendor/etc/dsi_panel_c3u_42_0f_0d_dsc_vdo_mi.xml
 vendor/etc/dsi_panel_c3u_46_0f_0c_dsc_vdo_mi.xml
 
 # Display firmware
-vendor/firmware/focaltech_ts_fw_boe.bin
-vendor/firmware/novatek_ts_hdl_fw.bin
-vendor/firmware/novatek_ts_hdl_mp.bin
-vendor/firmware/gt1151_default_firmware2.img
-vendor/firmware/gt9886_cfg_6781v01.bin
-vendor/firmware/gt9886_cfg_6785v96.bin
-vendor/firmware/gt9886_cfg_6785v99.bin
-vendor/firmware/gt9886_cfg_6853v01.bin
-vendor/firmware/gt9886_cfg_6873v01.bin
-vendor/firmware/gt9886_cfg_6877v01.bin
-vendor/firmware/gt9886_cfg_6885v01.bin
-vendor/firmware/gt9886_cfg_6885v1.bin
-vendor/firmware/gt9886_cfg_6885v9c.bin
-vendor/firmware/gt9886_cfg_6893v01.bin
-vendor/firmware/gt9886_cfg_90hz6785.bin
-vendor/firmware/gt9886_cfg_90hz6877.bin
-vendor/firmware/gt9886_cfg_90hz6885.bin
-vendor/firmware/gt9886_cfg_gt9885v1.bin
-vendor/firmware/gt9886_firmware_6781v01.bin
-vendor/firmware/gt9886_firmware_6785a4.bin
-vendor/firmware/gt9886_firmware_6785ae.bin
-vendor/firmware/gt9886_firmware_6853v01.bin
-vendor/firmware/gt9886_firmware_6873v01.bin
-vendor/firmware/gt9886_firmware_6877af.bin
-vendor/firmware/gt9886_firmware_6877v01.bin
-vendor/firmware/gt9886_firmware_6885a1.bin
-vendor/firmware/gt9886_firmware_6885af.bin
-vendor/firmware/gt9886_firmware_6885b0.bin
-vendor/firmware/gt9886_firmware_6885b1.bin
-vendor/firmware/gt9886_firmware_6885v01.bin
-vendor/firmware/gt9886_firmware_6893v01.bin
 vendor/firmware/mt6631_fm_v1_coeff.bin
 vendor/firmware/mt6631_fm_v1_patch.bin
 vendor/firmware/ovt_tcm_cap_limits.csv
 vendor/firmware/remoteproc_scp
-vendor/firmware/chipone_firmware.bin
 vendor/firmware/Conf_MultipleTest.ini
 
 # DRM
