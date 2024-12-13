@@ -632,7 +632,6 @@ vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/firmware/omnivision_hdl_firmware.img
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.mt6768.so
@@ -761,9 +760,6 @@ vendor/etc/dsi_panel_c3u_42_0f_0d_dsc_vdo_mi.xml
 vendor/etc/dsi_panel_c3u_46_0f_0c_dsc_vdo_mi.xml
 
 # Display firmware
-vendor/firmware/focaltech_ts_fw_boe.bin
-vendor/firmware/novatek_ts_hdl_fw.bin
-vendor/firmware/novatek_ts_hdl_mp.bin
 vendor/firmware/gt1151_default_firmware2.img
 vendor/firmware/gt9886_cfg_6781v01.bin
 vendor/firmware/gt9886_cfg_6785v96.bin
