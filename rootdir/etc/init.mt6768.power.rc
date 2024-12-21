@@ -90,7 +90,7 @@ on enable-low-power
     setprop vendor.powerhal.init 11
 
     # Adjust watermark level
-    write /proc/sys/vm/watermark_scale_factor 200
+    write /proc/sys/vm/watermark_scale_factor 125
 
 on property:sys.boot_completed=1
     trigger enable-low-power
