@@ -115,7 +115,7 @@ BOARD_SUPER_PARTITION_SIZE := 7516192768
 BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_SIZE := 7515140094
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/bliss/config/BoardConfigReservedSize.mk
 
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
@@ -177,7 +177,7 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    vendor/lineage/config/device_framework_matrix.xml \
+    vendor/bliss/config/device_framework_matrix.xml \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
