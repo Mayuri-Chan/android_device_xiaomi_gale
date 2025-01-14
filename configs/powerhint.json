@@ -402,6 +402,11 @@
     },
     {
       "PowerHint": "GAME",
+      "Type": "EndHint",
+      "Value": "INTERACTION"
+    },
+    {
+      "PowerHint": "GAME",
       "Node": "CPULittleClusterDownRateLimitUs",
       "Duration": 0,
       "Value": "20000"
