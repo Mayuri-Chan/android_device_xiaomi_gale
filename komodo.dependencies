@@ -1,22 +1,23 @@
 [
   {
-    "repository": "android_device_mediatek_sepolicy_vndr",
+    "repository": "LineageOS/android_device_mediatek_sepolicy_vndr",
     "target_path": "device/mediatek/sepolicy_vndr"
   },
   {
-    "repository": "android_hardware_mediatek",
+    "repository": "LineageOS/android_hardware_mediatek",
     "target_path": "hardware/mediatek"
   },
   {
-    "repository": "android_hardware_xiaomi",
+    "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "android_kernel_xiaomi_gale",
-    "target_path": "kernel/xiaomi/gale"
+    "repository": "Mayuri-Chan/android_kernel_xiaomi_gale",
+    "target_path": "kernel/xiaomi/gale",
+    "branch": "dev/rework"
   },
   {
-    "repository": "proprietary_vendor_xiaomi_gale",
+    "repository": "Mayuri-Chan/proprietary_vendor_xiaomi_gale",
     "target_path": "vendor/xiaomi/gale"
   }
 ]
