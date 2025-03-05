@@ -14,7 +14,7 @@
   {
     "repository": "Mayuri-Chan/android_kernel_xiaomi_gale",
     "target_path": "kernel/xiaomi/gale",
-    "branch": "dev/rework"
+    "branch": "lineage-22.1"
   },
   {
     "repository": "Mayuri-Chan/proprietary_vendor_xiaomi_gale",
