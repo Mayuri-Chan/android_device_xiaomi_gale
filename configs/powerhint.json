@@ -102,10 +102,11 @@
       "Name": "CPULittleClusterDownRateLimitUs",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us",
       "Values": [
-        "20000",
-        "5000",
+        "500",
         "2000",
-        "500"
+        "5000",
+        "10000",
+        "20000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -114,10 +115,11 @@
       "Name": "CPUBigClusterDownRateLimitUs",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us",
       "Values": [
-        "20000",
-        "5000",
+        "500",
         "2000",
-        "500"
+        "5000",
+        "10000",
+        "20000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -126,10 +128,11 @@
       "Name": "CPULittleClusterUpRateLimitUs",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us",
       "Values": [
-        "20000",
-        "5000",
+        "500",
         "2000",
-        "500"
+        "5000",
+        "10000",
+        "20000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -138,10 +141,11 @@
       "Name": "CPUBigClusterUpRateLimitUs",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us",
       "Values": [
-        "20000",
-        "5000",
+        "500",
         "2000",
-        "500"
+        "5000",
+        "10000",
+        "20000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -326,19 +330,19 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterDownRateLimitUs",
       "Duration": 1000,
-      "Value": "500"
+      "Value": "10000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterUpRateLimitUs",
       "Duration": 1000,
-      "Value": "500"
+      "Value": "10000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterUpRateLimitUs",
       "Duration": 1000,
-      "Value": "2000"
+      "Value": "10000"
     },
     {
       "PowerHint": "INTERACTION",
