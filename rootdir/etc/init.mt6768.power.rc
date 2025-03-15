@@ -54,6 +54,7 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
 
     # Sched tuning
+    write /proc/sys/kernel/sched_child_runs_first 1
     write /proc/sys/kernel/sched_migration_cost_ns 250000
     write /proc/sys/kernel/sched_pelt_multiplier 2
     write /proc/sys/kernel/sched_latency_ns 5000000
