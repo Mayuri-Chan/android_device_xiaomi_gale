@@ -44,7 +44,7 @@ on init
     chmod 0666 /dev/stune/io/tasks
 
     # VM Tweaks
-    write /proc/sys/vm/dirty_writeback_centisecs 300
+    write /proc/sys/vm/dirty_writeback_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 7
     write /proc/sys/vm/dirty_ratio 15
     write /proc/sys/vm/dirty_expire_centisecs 3000
