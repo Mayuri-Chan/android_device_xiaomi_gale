@@ -129,7 +129,7 @@ on init
     write /dev/cpuctl/nnapi-hal/cpu.shares 20480
 
     # Top app tasks
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/top-app/cpu.uclamp.min 15
     write /dev/cpuctl/top-app/cpu.uclamp.max max
     write /dev/cpuctl/top-app/cpu.shares 20480
