@@ -111,7 +111,7 @@ on init
     write /dev/cpuctl/dex2oat/cpu.shares 512
 
     # Foreground tasks
-    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/foreground/cpu.uclamp.min 10
     write /dev/cpuctl/foreground/cpu.uclamp.max max
     write /dev/cpuctl/foreground/cpu.shares 20480
