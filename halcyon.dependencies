@@ -1,23 +1,32 @@
 [
   {
-    "repository": "android_device_mediatek_sepolicy_vndr",
-    "target_path": "device/mediatek/sepolicy_vndr"
+    "remote": "halcyon",
+    "repository": "device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "15.1"
   },
   {
-    "repository": "android_hardware_mediatek",
-    "target_path": "hardware/mediatek"
+    "remote": "halcyon",
+    "repository": "hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch": "15.1"
   },
   {
-    "repository": "android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
+    "remote": "halcyon",
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "15.1"
   },
   {
-    "repository": "android_kernel_xiaomi_gale",
+    "remote": "halcyon-devices",
+    "repository": "kernel_xiaomi_gale",
     "target_path": "kernel/xiaomi/gale",
-    "branch": "lineage-21"
+    "branch": "15.1"
   },
   {
-    "repository": "proprietary_vendor_xiaomi_gale",
-    "target_path": "vendor/xiaomi/gale"
+    "remote": "halcyon-blobs",
+    "repository": "vendor_xiaomi_gale",
+    "target_path": "vendor/xiaomi/gale",
+    "branch": "15.1"
   }
 ]
