@@ -129,6 +129,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_gale)
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
