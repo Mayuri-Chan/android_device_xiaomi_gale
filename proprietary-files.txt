@@ -766,16 +766,9 @@ vendor/firmware/Conf_MultipleTest.ini
 
 # DRM
 vendor/lib64/liboemcrypto.so
-vendor/lib64/libtlcWidevineModularDrm.so
-vendor/lib64/liburee_meta_drmkeyinstall.so
-vendor/lib64/libwvkeyboxext.so
-vendor/lib64/libwvkeybox.so
 
-# DRM (Widevine) - from zircon-user 13 TP1A.220624.014 OS2.0.2.0.VNOMIXM release-keys
-vendor/bin/hw/android.hardware.drm-service.widevine
-vendor/etc/init/android.hardware.drm-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
-vendor/lib64/libwvaidl.so
+# DRM (Widevine) - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
+vendor/apex/com.google.android.widevine.nonupdatable.apex
 
 # Fingerprint
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
