@@ -17,6 +17,11 @@
     "branch": "lineage-22.2"
   },
   {
+    "repository": "android_vendor_mediatek_ims",
+    "target_path": "vendor/mediatek/ims",
+    "branch": "android-16"
+  },
+  {
     "repository": "proprietary_vendor_xiaomi_gale",
     "target_path": "vendor/xiaomi/gale"
   }
