@@ -87,7 +87,7 @@ on boot
 
     stop console
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     class hal
     user nfc
     group nfc
