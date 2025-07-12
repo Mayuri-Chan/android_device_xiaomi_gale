@@ -94,5 +94,14 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     disabled
     override
 
+on early-init && property:ro.boot.hwname=gust
+    enable nfc_hal_service.tms
+
 on post-fs && property:ro.boot.hwname=gust
     start vendor.nfc_hal_service
+
+service nfc_hal_service.tms /odm/bin/hw/android.hardware.nfc@1.2-service-tms
+    class hal
+    user nfc
+    group nfc
+    disabled
