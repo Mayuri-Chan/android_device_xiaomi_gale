@@ -164,6 +164,15 @@ on post-fs-data
     chmod 0660 /dev/p73
     chown secure_element secure_element /dev/p73
 
+    wait /sys/nfc/chip_name
+    chmod 0660 /dev/tms_nfc
+    chown nfc nfc /dev/tms_nfc
+    chown nfc nfc /sys/nfc/chip_name
+
+    wait /dev/tms_ese 1
+    chmod 0660 /dev/tms_ese
+    chown secure_element secure_element /dev/tms_ese
+
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
