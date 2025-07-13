@@ -397,12 +397,11 @@
            <instance>mtkSmartRatSwitch2</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.mediatek.hardware.netdagent</name>
-        <transport>hwbinder</transport>
-        <version>1</version>
+    <hal format="hidl" optional="true">
+       <name>vendor.mediatek.hardware.netdagent</name>
+        <version>1.0</version>
         <interface>
-           <name>INetdagents</name>
+           <name>INetdagent</name>
            <instance>default</instance>
         </interface>
     </hal>

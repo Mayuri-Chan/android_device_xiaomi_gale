@@ -844,16 +844,13 @@ vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
-# Tether Offload - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
+# Tether Offload
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
-vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
 vendor/etc/init/netdagent.rc
-vendor/etc/vintf/manifest/CommandService.xml
-vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
+vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
