@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gale.mk
+    $(LOCAL_DIR)/halcyon_gale.mk
 
