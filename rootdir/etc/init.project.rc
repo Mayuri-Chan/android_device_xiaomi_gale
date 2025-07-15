@@ -99,6 +99,8 @@ on early-init && property:ro.boot.hwname=gust
 
 on post-fs && property:ro.boot.hwname=gust
     start vendor.nfc_hal_service
+    setprop ro.vendor.se.type HCE,UICC
+    setprop ro.vendor.nfc.repair 1
 
 service nfc_hal_service.tms /odm/bin/hw/android.hardware.nfc@1.2-service-tms
     class hal

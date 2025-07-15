@@ -1004,6 +1004,14 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/lib64/ese_client.so
+vendor/lib64/hal_libnfc.so
+vendor/lib64/nfc_nci_nxp.so
+vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
+
 # NFC - from zircon OS2.0.2.0.VNOMIXM
 odm/bin/hw/android.hardware.nfc@1.2-service-tms
 odm/lib64/7816-3-T1.so
