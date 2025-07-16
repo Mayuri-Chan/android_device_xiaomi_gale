@@ -1,3 +1,6 @@
+# Blur
+ro.surface_flinger.supports_background_blur=1
+
 # dex2oat
 dalvik.vm.dex2oat-cpu-set=2,3,4,5,6
 dalvik.vm.dex2oat-threads=5
@@ -11,4 +14,3 @@ zygote.critical_window.minute=10
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
-
