@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/gale/device.mk)
 
 # Inherit some common LineageOS stuff.
 TARGET_BUILD_GAPPS := true
+TARGET_ENABLE_BLUR := true
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 PRODUCT_NAME := yaap_gale
