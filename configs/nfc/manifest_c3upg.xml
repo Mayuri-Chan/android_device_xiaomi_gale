@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device" >
+<manifest version="8.0" type="device" target-level="6">
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
@@ -27,10 +27,8 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.tms.tmsnfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
+    <hal format="aidl">
+        <name>vendor.tms.tmsnfc_aidl</name>
         <interface>
             <name>ITmsNfc</name>
             <instance>default</instance>

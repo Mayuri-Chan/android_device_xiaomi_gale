@@ -94,5 +94,14 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     disabled
     override
 
+service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 on post-fs && property:ro.boot.hwname=gust
     start vendor.nfc_hal_service
+
+on post-fs && property:ro.boot.hwname=gust
+   start nfc_hal_service.tms.aidl
