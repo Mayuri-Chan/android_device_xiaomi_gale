@@ -429,9 +429,8 @@
            <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.tms.tmsnfc</name>
-        <version>1.0</version>
+    <hal format="aidl">
+        <name>vendor.tms.tmsnfc_aidl</name>
         <interface>
             <name>ITmsNfc</name>
             <instance>default</instance>

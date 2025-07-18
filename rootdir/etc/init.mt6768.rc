@@ -156,12 +156,15 @@ on late-fs
 on post-fs-data
     mkdir /data/vendor 0777 nfc nfc
     mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0777 nfc nfc
     chmod 0777 /dev/nq-nci
     chown nfc nfc /dev/nq-nci
 
     mkdir /data/vendor/secure_element 0777  secure_element secure_element
     chmod 0660 /dev/p73
+    chmod 0660 /dev/pn557
+    chown nfc nfc /dev/pn557
     chown secure_element secure_element /dev/p73
 
     wait /sys/nfc/chip_name
