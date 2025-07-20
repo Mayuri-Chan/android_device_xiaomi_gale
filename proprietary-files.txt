@@ -777,6 +777,21 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib64/libwvaidl.so
 
+# EngineerMode - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
+system_ext/app/EngineerMode/EngineerMode.apk
+system_ext/lib/libaudiotoolkit.so
+system_ext/lib/libem_aoltest_jni.so
+system_ext/lib/libem_audio_jni.so
+system_ext/lib/libem_bleoffload_jni.so
+system_ext/lib/libem_support_jni.so
+system_ext/lib/libem_wifi_jni.so
+system_ext/lib64/libaudiotoolkit.so
+system_ext/lib64/libem_aoltest_jni.so
+system_ext/lib64/libem_audio_jni.so
+system_ext/lib64/libem_bleoffload_jni.so
+system_ext/lib64/libem_support_jni.so
+system_ext/lib64/libem_wifi_jni.so
+
 # Fingerprint
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
