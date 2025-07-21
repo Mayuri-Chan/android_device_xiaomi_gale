@@ -229,6 +229,9 @@ ro.config.avoid_gfx_accel=true
 # Trusted Execution Environment (TEE)
 ro.vendor.mtk_microtrust_tee_support=1
 
+# UI
+is_expressive_design_enabled=true
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
