@@ -162,10 +162,6 @@ vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/firmware/BT_FW.cfg
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
-vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
-vendor/lib/libbluetooth_mtk.so
-vendor/lib/libbluetooth_mtk_pure.so
-vendor/lib/libbt-vendor.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
@@ -631,61 +627,7 @@ vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/arm.graphics-V1-ndk_platform.so
-vendor/lib/egl/egl.cfg
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.mt6768.so
-vendor/lib/egl/libGLES_meow.so
-vendor/lib/egl/libMEOW_data.so
-vendor/lib/egl/libMEOW_gift.so
-vendor/lib/egl/libMEOW_qt.so
-vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib/libDefaultFpsActor.so
-vendor/lib/libFrameRecord.so
-vendor/lib/libNoFpsActor.so
-vendor/lib/libOpenCL.so
-vendor/lib/libaal_cust.so
-vendor/lib/libaal_key.so
-vendor/lib/libaal_mtk.so
-vendor/lib/libaalservice.so
-vendor/lib/libappgamepq.so
-vendor/lib/libdre.so
-vendor/lib/libgamehdr.so
-vendor/lib/libged.so
-vendor/lib/libgpu_aux.so
-vendor/lib/libgpud.so
-vendor/lib/libgralloc_extra.so
-vendor/lib/libgralloc_metadata.so
-vendor/lib/libgralloctypes_mtk.so
-vendor/lib/libhdrvideo.so
-vendor/lib/libmml.so
-vendor/lib/libpq_cust_base.so
-vendor/lib/libpqframework.so
-vendor/lib/libpqparamparser.so
-vendor/lib/libpqpconfig.so
-vendor/lib/mt6768/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
 vendor/lib/mt6768/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
-vendor/lib/mt6768/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
-vendor/lib/vendor.mediatek.hardware.pq@2.0.so
-vendor/lib/vendor.mediatek.hardware.pq@2.1.so
-vendor/lib/vendor.mediatek.hardware.pq@2.10.so
-vendor/lib/vendor.mediatek.hardware.pq@2.11.so
-vendor/lib/vendor.mediatek.hardware.pq@2.12.so
-vendor/lib/vendor.mediatek.hardware.pq@2.13.so
-vendor/lib/vendor.mediatek.hardware.pq@2.14.so
-vendor/lib/vendor.mediatek.hardware.pq@2.15.so
-vendor/lib/vendor.mediatek.hardware.pq@2.2.so
-vendor/lib/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib/vendor.mediatek.hardware.pq@2.4.so
-vendor/lib/vendor.mediatek.hardware.pq@2.5.so
-vendor/lib/vendor.mediatek.hardware.pq@2.6.so
-vendor/lib/vendor.mediatek.hardware.pq@2.7.so
-vendor/lib/vendor.mediatek.hardware.pq@2.8.so
-vendor/lib/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/hw/vulkan.mt6768.so
 vendor/lib64/egl/libGLES_meow.so
@@ -746,7 +688,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Display (Thread Unwinding) - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
 vendor/lib/libladder.so
-vendor/lib/libudf.so
 vendor/lib64/libladder.so
 vendor/lib64/libudf.so
 
@@ -779,12 +720,6 @@ vendor/lib64/libwvaidl.so
 
 # EngineerMode - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
 system_ext/app/EngineerMode/EngineerMode.apk
-system_ext/lib/libaudiotoolkit.so
-system_ext/lib/libem_aoltest_jni.so
-system_ext/lib/libem_audio_jni.so
-system_ext/lib/libem_bleoffload_jni.so
-system_ext/lib/libem_support_jni.so
-system_ext/lib/libem_wifi_jni.so
 system_ext/lib64/libaudiotoolkit.so
 system_ext/lib64/libem_aoltest_jni.so
 system_ext/lib64/libem_audio_jni.so
@@ -902,8 +837,6 @@ vendor/etc/thermald-devices.conf
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
 vendor/lib/libTEECommon.so
-vendor/lib/libimsg_log.so
-vendor/lib/libteei_daemon_vfs.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libteei_daemon_vfs.so
@@ -1006,13 +939,6 @@ vendor/lib64/libformatter.so
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
-vendor/lib/vendor.mediatek.hardware.mms@1.0.so
-vendor/lib/vendor.mediatek.hardware.mms@1.1.so
-vendor/lib/vendor.mediatek.hardware.mms@1.2.so
-vendor/lib/vendor.mediatek.hardware.mms@1.3.so
-vendor/lib/vendor.mediatek.hardware.mms@1.4.so
-vendor/lib/vendor.mediatek.hardware.mms@1.5.so
-vendor/lib/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
