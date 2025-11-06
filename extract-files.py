@@ -88,8 +88,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsysenv.so',
         'odm/lib64/nfc_nci.thn31nfc.tms.so',
         'odm/lib64/tms-utils.so'
-    ) : blob_fixup()
+    ) : blob_fixup(),
+    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so') : blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/lib/hw/audio.primary.mt6768.so' : blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
     'vendor/lib64/hw/hwcomposer.mt6768.so' : blob_fixup()
         .add_needed('libprocessgroup_shim.so')
 }  # fmt: skip
