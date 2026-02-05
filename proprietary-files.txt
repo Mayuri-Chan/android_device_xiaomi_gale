@@ -156,11 +156,8 @@ vendor/etc/smartpa_param/AW_SINWAVE_DSP.bin
 vendor/etc/public.libraries.txt
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
-vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/firmware/BT_FW.cfg
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
