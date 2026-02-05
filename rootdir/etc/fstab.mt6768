@@ -1,14 +1,14 @@
 # Filesystem definitions for MT6768
 
 # System partitions
-system         /system               erofs   ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-system         /system               ext4    ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system         /system               erofs   ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system         /system               ext4    ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 vendor         /vendor               erofs   ro      wait,slotselect,avb,logical,first_stage_mount
 vendor         /vendor               ext4    ro      wait,slotselect,avb,logical,first_stage_mount
 product        /product              erofs   ro      wait,slotselect,avb,logical,first_stage_mount
 product        /product              ext4    ro      wait,slotselect,avb,logical,first_stage_mount
-system_ext     /system_ext           erofs   ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-system_ext     /system_ext           ext4    ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system_ext     /system_ext           erofs   ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system_ext     /system_ext           ext4    ro      wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 
 # Metadata and userdata
 /dev/block/by-name/md_udc   /metadata       ext4    noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
