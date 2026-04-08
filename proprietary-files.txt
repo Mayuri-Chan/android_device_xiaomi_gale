@@ -9,7 +9,6 @@ vendor/firmware/awinic_params.bin
 vendor/firmware/awinic_sinwave_params.bin
 vendor/firmware/fs1801.fsm
 vendor/lib/hw/audio.primary.mt6768.so
-vendor/lib/hw/audio.r_submix.mt6768.so
 vendor/lib/hw/awinic.audio.effect.so;FIX_SONAME
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
@@ -344,7 +343,6 @@ vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libneuron_runtime.6.so
-vendor/lib64/libnbaio_mono.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
