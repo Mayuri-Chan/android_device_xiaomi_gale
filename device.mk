@@ -280,6 +280,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENABLE_UFFD_GC := true
 
 # USB
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
