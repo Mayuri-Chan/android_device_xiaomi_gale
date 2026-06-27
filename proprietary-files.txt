@@ -703,12 +703,12 @@ vendor/lib64/libwvaidl.so|cb5b25771dd76384feff15812082fa93b781e27a
 
 # EngineerMode - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
 system_ext/app/EngineerMode/EngineerMode.apk|832927ebd675e5ab22f564c87490d40401faab40
-system_ext/lib64/libaudiotoolkit.so|d6d801fd1a2cb76561cd45773f73b0d7eaeb501c
-system_ext/lib64/libem_aoltest_jni.so|dd56c29aadc7f5f756cc8c4bebcdd0ca2235c6c4
-system_ext/lib64/libem_audio_jni.so|00b4805f810371737e04df743b1a124fccf7a76a
-system_ext/lib64/libem_bleoffload_jni.so|93bc4335595ce9b1a3d37d40885fe16eafd3e432
-system_ext/lib64/libem_support_jni.so|39f00b239c70dc066bd9dfe470bc74aa92486ef9
-system_ext/lib64/libem_wifi_jni.so|a9fd09f5163f44a43ac0181051530c68efbd3334
+system_ext/lib64/libaudiotoolkit.so;DISABLE_CHECKELF|d6d801fd1a2cb76561cd45773f73b0d7eaeb501c
+system_ext/lib64/libem_aoltest_jni.so;DISABLE_CHECKELF|dd56c29aadc7f5f756cc8c4bebcdd0ca2235c6c4
+system_ext/lib64/libem_audio_jni.so;DISABLE_CHECKELF|00b4805f810371737e04df743b1a124fccf7a76a
+system_ext/lib64/libem_bleoffload_jni.so;DISABLE_CHECKELF|93bc4335595ce9b1a3d37d40885fe16eafd3e432
+system_ext/lib64/libem_support_jni.so;DISABLE_CHECKELF|39f00b239c70dc066bd9dfe470bc74aa92486ef9
+system_ext/lib64/libem_wifi_jni.so;DISABLE_CHECKELF|a9fd09f5163f44a43ac0181051530c68efbd3334
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.default.so
