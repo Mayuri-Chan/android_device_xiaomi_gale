@@ -674,9 +674,9 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Display (Thread Unwinding) - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-vendor/lib/libladder.so
-vendor/lib64/libladder.so
-vendor/lib64/libudf.so
+vendor/lib/libladder.so|02a66f62747a06ffc79c22d788b52a7804e7fd42
+vendor/lib64/libladder.so|db21530e99b7838e93d8f30926a9208a447bf502
+vendor/lib64/libudf.so|3f20822e12d875409be8b963055558636dc2cb47
 
 # Display Configs
 vendor/etc/dsi_panel_c3u_35_03_0b_dsc_vdo_mi.xml
@@ -700,19 +700,19 @@ vendor/lib64/libwvkeyboxext.so
 vendor/lib64/libwvkeybox.so
 
 # DRM (Widevine) - from zircon-user 13 TP1A.220624.014 OS2.0.2.0.VNOMIXM release-keys
-vendor/bin/hw/android.hardware.drm-service.widevine
-vendor/etc/init/android.hardware.drm-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
-vendor/lib64/libwvaidl.so
+vendor/bin/hw/android.hardware.drm-service.widevine|e005a359b154b43837172807cb5ec5ddb989425a
+vendor/etc/init/android.hardware.drm-service.widevine.rc|54c79ef531c9c135fa234a8515b3d37f0e1ccc4d
+vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml|7e13b6628572b1cdd76351b744e2805d4e6f2dd9
+vendor/lib64/libwvaidl.so|cb5b25771dd76384feff15812082fa93b781e27a
 
 # EngineerMode - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-system_ext/app/EngineerMode/EngineerMode.apk
-system_ext/lib64/libaudiotoolkit.so
-system_ext/lib64/libem_aoltest_jni.so
-system_ext/lib64/libem_audio_jni.so
-system_ext/lib64/libem_bleoffload_jni.so
-system_ext/lib64/libem_support_jni.so
-system_ext/lib64/libem_wifi_jni.so
+system_ext/app/EngineerMode/EngineerMode.apk|832927ebd675e5ab22f564c87490d40401faab40
+system_ext/lib64/libaudiotoolkit.so|d6d801fd1a2cb76561cd45773f73b0d7eaeb501c
+system_ext/lib64/libem_aoltest_jni.so|dd56c29aadc7f5f756cc8c4bebcdd0ca2235c6c4
+system_ext/lib64/libem_audio_jni.so|00b4805f810371737e04df743b1a124fccf7a76a
+system_ext/lib64/libem_bleoffload_jni.so|93bc4335595ce9b1a3d37d40885fe16eafd3e432
+system_ext/lib64/libem_support_jni.so|39f00b239c70dc066bd9dfe470bc74aa92486ef9
+system_ext/lib64/libem_wifi_jni.so|a9fd09f5163f44a43ac0181051530c68efbd3334
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.default.so
@@ -724,9 +724,9 @@ vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF
 vendor/lib64/libsl_fp_impl.so
 
 # Fingerprint - from from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
-vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
-vendor/lib64/hw/fingerprint.silead.default.so
+vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service|ba30da3e762e288bc42c1cefb13dca7686812533
+vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc|623d401bddcf5f5769b5346644d819b172e3de84
+vendor/lib64/hw/fingerprint.silead.default.so|acdcb8852bf5b519ac555318d713502b317cf12c
 
 # Fuelgauge
 vendor/bin/fuelgauged
@@ -772,10 +772,10 @@ vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
 # ION from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
+vendor/lib/libion_mtk.so|c4de2b37d7aafb0d582f9a650c2635ea89571aec
+vendor/lib/libion_ulit.so|59d5a80fa86127c4a6d9c53c262afeb128ac1c8e
+vendor/lib64/libion_mtk.so|2b147356a223e69d3b66f738242d202f31bff91f
+vendor/lib64/libion_ulit.so|f94e14538eb7e2eb604fa762abcd564c01fa652b
 
 # Keymaster
 vendor/bin/bp_kmsetkey_ca
@@ -789,11 +789,11 @@ vendor/etc/init/netdagent.rc
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Tether Offload - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-vendor/bin/hw/tetheroffloadservice
-vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
-vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
-vendor/lib64/libforkexecwrap.so
-vendor/lib64/libifcutils_mtk.so
+vendor/bin/hw/tetheroffloadservice|e6e0fb71f6587dea35863ae947cb1a3c2cae38d6
+vendor/etc/init/android.hardware.tetheroffload-V1-service.rc|6fc5b85acc5e15fb8bb6d9a85d497df05d98e619
+vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml|68c5b9ffc5f7899a4a2012ae4c87f3e59191ce36
+vendor/lib64/libforkexecwrap.so|acfb7b3345a35521716b3dddb32f2bf1f62046e2
+vendor/lib64/libifcutils_mtk.so|1d54e51eb757a6d68ce117723b488d995079102f
 
 # Thermal
 vendor/bin/mi_thermald
@@ -938,21 +938,21 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # NFC - from gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-product/pangu/system/etc/permissions/com.tms.cosdl.xml:system/etc/permissions/com.tms.cosdl.xml
-product/pangu/system/etc/permissions/com.tms.nfc.xml:system/etc/permissions/com.tms.nfc.xml
-product/pangu/system/framework/com.tms.cosdl.jar:system/framework/com.tms.cosdl.jar
-product/pangu/system/framework/com.tms.nfc.jar:system/framework/com.tms.nfc.jar
-vendor/bin/hw/android.hardware.nfc-service-tms
-vendor/lib64/7816-3-T1.so
-vendor/lib64/nfc_nci.thn31nfc.tms.so
-vendor/lib64/tms-cos-dl-common.so
-vendor/lib64/tms-cos-dl-ree.so
-vendor/lib64/tms-utils.so
-vendor/lib64/vendor.tms.tmsnfc_aidl-V1-ndk.so
-vendor/lib64/vendor.tms.tmsnfc@1.0.so
+system/etc/permissions/com.tms.cosdl.xml|686090b9e8f1243262d00693728ea634fbe47bb7
+system/etc/permissions/com.tms.nfc.xml|864b7bdf7114892ea8e9aaa1605f97913150d61a
+system/framework/com.tms.cosdl.jar|7b325bfc7db0ba342a49f2e0ece0c037611e31c4
+system/framework/com.tms.nfc.jar|911c5e54b51b95aaeb8fa846b35e98eb5e58c74a
+vendor/bin/hw/android.hardware.nfc-service-tms|82b34858e59e7feb49e2a466bdc4bf2e4dd3275e
+vendor/lib64/7816-3-T1.so|f223250f52b49ffc27a169f86afc595c115fd232
+vendor/lib64/nfc_nci.thn31nfc.tms.so|dc0275a1b374de47cfe778c7abd3bb7225ece357
+vendor/lib64/tms-cos-dl-common.so|efc74f510da405b9e9f9918ec3d0c65b14ec3209
+vendor/lib64/tms-cos-dl-ree.so|ee40d72a1f5f341b5977e00cc4c45f748a4af9a2
+vendor/lib64/tms-utils.so|c004a65f29ee472fc669bbc1b332b2ed7e8510ee
+vendor/lib64/vendor.tms.tmsnfc_aidl-V1-ndk.so|ef2408829aaf70b446a50f6bf7ec8b346a55f9dd
+vendor/lib64/vendor.tms.tmsnfc@1.0.so|f42b18b24d87bd6c2abaa05ae5c96c67af00b59d
 
 # NFC (Firmware) - gale-user 15 AP3A.240905.015.A2 OS2.0.6.0.VGPMIXM release-keys
-vendor/etc/SEC_THN31_FW_VTP.txt.bin
+vendor/etc/SEC_THN31_FW_VTP.txt.bin|155a9a22de791f8eabae0be6ac0e3ecad05b84d0
 
 # Perf
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
