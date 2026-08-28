@@ -90,6 +90,11 @@ on fs
     # mount fstab
     mount_all /vendor/etc/fstab.mt6768 --early
 
+    # This device has no standalone odm partition. TMS NFC loads its regional
+    # RF profile from /odm/etc, so expose the vendor-owned ODM directory there.
+    mkdir /odm 0755 root root
+    mount none /vendor/odm /odm bind
+
     mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
     # M372  Add for sensor calibration command in 20230606 start
@@ -160,10 +165,13 @@ on post-fs-data
     chown nfc nfc /dev/pn557
     chown secure_element secure_element /dev/p73
 
-    wait /sys/nfc/chip_name
+    # Guidev creates this attribute after it has bound either THN31 or PN557.
+    # A bounded wait prevents a failed probe from stalling post-fs-data forever.
+    wait /sys/nfc/chip_name 5
     chmod 0660 /dev/tms_nfc
     chown nfc nfc /dev/tms_nfc
     chown nfc nfc /sys/nfc/chip_name
+    start vendor.nfc_chip_selector
 
     wait /dev/tms_ese 1
     chmod 0660 /dev/tms_ese

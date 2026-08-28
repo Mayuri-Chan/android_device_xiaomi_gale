@@ -145,6 +145,10 @@
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
 
+# NFC
+/dev/tms_nfc              0660   nfc        nfc
+/dev/tms_ese              0660   secure_element secure_element
+
 # Resume-on-Reboot
 /dev/access-kregistry     0660   system     system
 

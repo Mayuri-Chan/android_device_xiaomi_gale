@@ -17,3 +17,6 @@ vendor.silead.fp.ext.                    u:object_r:vendor_silead_fp_prop:s0
 
 # Thermal
 vendor.sys.thermal.                      u:object_r:vendor_thermal_engine_prop:s0
+
+# NFC
+vendor.nfc.chip                           u:object_r:vendor_nfc_chip_prop:s0

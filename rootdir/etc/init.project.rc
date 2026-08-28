@@ -100,8 +100,17 @@ service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
     group nfc
     disabled
 
-on early-init && property:ro.boot.hwname=gust
-   enable vendor.nfc_hal_service
+service vendor.nfc_chip_selector /vendor/bin/nfc_chip_selector
+    class core
+    user root
+    group root
+    disabled
+    oneshot
 
-on post-fs && property:ro.boot.hwname=gust
-   start nfc_hal_service.tms.aidl
+# The Guide driver publishes the physical chip in /sys/nfc/chip_name.  Start
+# exactly one implementation: both HALs register android.hardware.nfc/INfc.
+on property:vendor.nfc.chip=thn31
+    start nfc_hal_service.tms.aidl
+
+on property:vendor.nfc.chip=pn557
+    start vendor.nfc_hal_service

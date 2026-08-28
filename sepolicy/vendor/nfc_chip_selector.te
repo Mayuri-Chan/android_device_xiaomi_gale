@@ -1,0 +1,7 @@
+type nfc_chip_selector, domain;
+type nfc_chip_selector_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(nfc_chip_selector)
+
+r_dir_file(nfc_chip_selector, sysfs)
+set_prop(nfc_chip_selector, vendor_nfc_chip_prop)
