@@ -73,4 +73,3 @@ prebuilt_etc {
     src: "etc/ueventd.mt6768.rc",
     vendor: true,
 }
-

@@ -9,6 +9,14 @@
             <instance>SIM2</instance>
         </interface>
     </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.nfc</name>
+        <version>1</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl">
         <name>vendor.tms.tmsnfc_aidl</name>
         <interface>

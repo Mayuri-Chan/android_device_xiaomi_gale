@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    nfc_chip_selector \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
     SecureElement \
@@ -150,6 +151,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# /odm is exposed from vendor/odm on this device. TMS reads the regional
+# RF/antenna profile via /odm/etc, so install both profiles there.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-tms_RF_GB1.conf:$(TARGET_COPY_OUT_VENDOR)/odm/etc/libnfc-tms_RF_GB1.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_VENDOR)/odm/etc/libnfc-tms_RF_EC2.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_c3un/android.hardware.nfc.xml \
