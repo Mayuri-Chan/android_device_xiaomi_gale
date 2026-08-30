@@ -137,6 +137,9 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_gale)
 
+# Use the legacy ION implementation required by the MT6768 vendor blobs.
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage

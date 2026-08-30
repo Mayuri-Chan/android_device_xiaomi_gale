@@ -139,6 +139,7 @@ BOARD_USES_METADATA_PARTITION := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
