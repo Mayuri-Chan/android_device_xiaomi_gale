@@ -1,0 +1,4 @@
+# TMS stores runtime transit configuration under /data/vendor/nfc.
+# The framework NFC process must be able to traverse this vendor-labelled
+# directory while it initializes the vendor AIDL HAL.
+allow nfc nfc_data_vendor_file:dir search;
